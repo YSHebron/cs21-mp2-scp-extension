@@ -50,3 +50,10 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Submission Confidentials
+*.tmp
+*.docx
+*.bkp
+*.mp4
+*.drawio
