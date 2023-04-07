@@ -23,9 +23,9 @@ Extreme care was also taken to maintain the baseline integrity of the single cyc
 The video documentation may be accessed through this link:
 
 ### **Requirements**
-It is suggested for you to only watch the video documentation or skim through the written documentation due to the project's tediousness. Design, simulation, and testbench files from the workbench (`CS21_Project2_v2\`) were also fetched for your quick reference (see `Design Sources\`, `Instruction Tests\` & `Simulation Sources\`, and `Testbenches\` respectively).
+It is suggested for you to only watch the video documentation or skim through the written documentation due to the project's tediousness. Design, simulation, and testbench files from the workbench (`CS21_Project2_v2\`) were also fetched for your quick reference. You may browse them in the directories `Design Sources\`, `Instruction Tests\` & `Simulation Sources\`, and `Testbenches\` respectively.
 
-However, if you wish to verify our results on your end, the following would be needed.
+However, if you really wish to verify the results on your end, the following would be needed.
 - Windows 10 or higher
 - For high-performance systems, one may use Xilinx Vivado 2021.2 Suite: Download through https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2021-2.html (will require account registration).
 - For low-performance systems, one may use EDA Playground. Web app through https://edaplayground.com/ (will require account registration). Please see Project 2 Specs page 25 for full guide. 
@@ -37,18 +37,21 @@ However, if you wish to verify our results on your end, the following would be n
 This guide will only focus on the Vivado platform. Analogous steps can be expected in EDA Playground.
 1. Start Vivado. Complete the set-up and account registration process.
 2. Once Vivado is started, open an existing workbench through File. Select the following directory in your clone of this repository: `CS21_Project2_v2\`. This step will load all Design and Simulation sources to your Vivado session.
-3. Once the workbench has loaded, you may begin testing the added instructions. Select the appropriate testbench for the desired instruction that you will test in the Sources pane. 
+3. Once the workbench has loaded, you may begin testing the added instructions. Select the appropriate testbench for the desired instruction that you will test in the Sources pane, right click it, and select "Move to top".
+4. Reorder the hiearchy of files by refreshing the Sources pane.
+5. Open `memfile.mem` in the Vivado Sources pane, and its contents will appear in a tab the Vivado Editor panel.
+6. Copy the contents of the desired instruction test from `Instruction Tests\` to `memfile.mem` (overwrite it).
+7. Finally, hit Simulate from the Menu Bar. This will produce a waveform diagram that you may examine for any errors (as we did in the documentation). You may also watch the Console Log panel for any issues (the testbench is very verbose).
 
-### **Sample I/O**
-For the 4x4 solver, an input is formatted as:
+### **Sample I/O (sll)**
+For the sll instruction, you will open `Instruction Tests\sll memfile.txt` and copy its machine code contents to your `memfile.mem`. 
 ```
 1000
 0001
 0400
 0020
 ```
-
-Which outputs:
+An assembly translation of that machine code can be found in  `Instruction Tests\sll tester.asm`. Simulating this will then output the following waveform diagram:
 ```
 1342
 4231
