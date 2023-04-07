@@ -6,7 +6,9 @@ For this project, we were tasked to extend the MIPS 32-bit Single Cycle Processo
 4. Load immediate (li)
 5. Zero-from-right (zfr)
 
-Please see my Documenation Intro () or the MIPS Green Sheet () for the instruction formats and Appendix B of Harris & Harris (2013) or the Project 2 Specs for the complete instruction set and their expected effect.
+Please see my Documentation Intro (`For Submission\Hebron_Yenzy_202003090_LAB4.pdf`) or the MIPS Green Sheet (`MIPS Green Sheet (Berkeley).pdf`) for the MIPS32 instruction formats. You may also consult Appendix B of Harris & Harris (2013) or the Project 2 Specs for the complete instruction set and their expected effect.
+
+Note that before 
 
 ## MIPS32 Assembly 4x4 and 9x9 Sudoku Solver
 First, we noted Sudoku's goal conditions and constraints (see `CS21_Project1_Specs.pdf`).\
