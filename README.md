@@ -1,13 +1,12 @@
 # **CS 21 Project 2: Extending a 32-bit CPU Instruction Set.**
-For this project, we were tasked to extend the MIPS32 Single Cycle Processor (SCP) (Harris, 2013) instruction set. The processor was modified to accomodate 5 new instructions.
+For this project, we were tasked to extend the MIPS 32-bit Single Cycle Processor (SCP) (Harris & Harris, 2013) instruction set. The processor was modified to accomodate 5 new instructions:
+1. Shift left logical (sll)
+2. Store byte (sb)
+3. Branch on less than or equal (ble)
+4. Load immediate (li)
+5. Zero-from-right (zfr)
 
-Before our modifications, the processor can only execute 
-
-Reference Text: 
-
-MIPS green sheet.
-
-R-type, I-type, and J-type instructions.
+Please see my Documenation Intro for the instruction formats and Appendix B of Harris & Harris (2013) or the Project 2 Specs for the complete instruction set and their expected effect.
 
 ## MIPS32 Assembly 4x4 and 9x9 Sudoku Solver
 First, we noted Sudoku's goal conditions and constraints (see `CS21_Project1_Specs.pdf`).\
