@@ -23,7 +23,7 @@ Extreme care was also taken to maintain the baseline integrity of the single cyc
 The video documentation may be accessed through this link:
 
 ### **Requirements**
-It is suggested for you to only watch the video documentation or skim through the written documentation due to the tediousness of the subject. However, if you wish to verify this endeavor's results on your end, the following would be needed.
+It is suggested for you to only watch the video documentation or skim through the written documentation due to the tediousness of the subject. Design, simulation, and testbench files from the workbench (`CS21_Project2_v2`) were also fetched for your quick reference (see `Design Sources`, `Instruction Tests` & `Simulation Sources`, and `Testbenches` respectively). However, if you wish to verify this endeavor's results on your end, the following would be needed.
 - Windows 10 or higher
 - For high-performance systems, one may use Xilinx Vivado 2021.2 Suite: Download through https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2021-2.html (will require account registration).
 - For low-performance systems, one may use EDA Playground. Web app through https://edaplayground.com/ (will require account registration). Please see Project 2 Specs page 25 for full guide. 
@@ -35,7 +35,7 @@ It is suggested for you to only watch the video documentation or skim through th
 This guide will only focus on the Vivado platform. Analogous steps can be expected in EDA Playground.
 1. Start Vivado. Complete the set-up and account registration process.
 2. Once Vivado is started, open an existing workbench through File. Select the following directory in your clone of this repository: `CS21_Project2_v2\`. This step will load all Design and Simulation sources to your Vivado session.
-3. Once the workbench has loaded, you may begin testing the added instructions. Select the appropriate testbench for the desired instruction that you will test in the Simulation Sources pane. 
+3. Once the workbench has loaded, you may begin testing the added instructions. Select the appropriate testbench for the desired instruction that you will test in the Sources pane. 
 
 ### **Sample I/O**
 For the 4x4 solver, an input is formatted as:
