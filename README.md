@@ -29,10 +29,10 @@ It is suggested for you to only watch the video documentation or skim through th
 - For low-performance systems, one may use EDA Playground. Web app through https://edaplayground.com/ (will require account registration). Please see Project 2 Specs page 25 for full guide. 
 - Minimal space and at least 4 GB memory for EDA playground. At least 70 GB of space and 8 GB of memory for Xilinx Vivado.
 
-**Remark:** Do note that this project was accomplished through Vivado.
+**Remark:** Please note that this project was accomplished through Vivado.
 
 ### **Running Simulations**
-This 
+This guide will only. Analogous steps can be expected in EDA Playground.
 
 ### **Sample I/O**
 For the 4x4 solver, an input is formatted as:
