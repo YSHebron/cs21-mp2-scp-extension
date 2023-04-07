@@ -1,4 +1,6 @@
 # **CS 21 Project 2: Extending a 32-bit CPU Instruction Set.**
+
+### **Description**
 For this project, we were tasked to extend the MIPS 32-bit Single Cycle Processor (SCP) (Harris & Harris, 2013) instruction set (please see `CS21_Project2_Specs.pdf` for full specifications).
 
 A nuanced understanding of **Hardware Definition Language** (HDL) (specifically **SystemVerilog**) and digital circuits (especially the **datapath** and **control path**) is key to succeeding on this project. We modified the processor to accomodate 5 new instructions:
@@ -10,18 +12,19 @@ A nuanced understanding of **Hardware Definition Language** (HDL) (specifically 
 
 Please see my Documentation Intro (`For Submission\Hebron_Yenzy_202003090_LAB4.pdf`) or the MIPS Green Sheet (`MIPS Green Sheet (Berkeley).pdf`) for the MIPS32 instruction formats. You may also consult Appendix B of Harris & Harris (2013) or the Project 2 Specs for the complete instruction set and their expected effect.
 
-Our technical documentation skills were also sharpened by this project, one that require line-by-line explanation of code. Discussed in the documentation are the following (per added instruction):
+Our technical documentation skills were also sharpened by this project, one that required *line-by-line* explanation of code. Discussed in the documentation *per added instruction* are:
 * HDL edits
 * Testbench for simulations. 
 * Test code (in assembly and in machine code) for verifying if the extended instruction set is working.
 * Demonstration that the processor can now successfully execute the instruction required.
 
+Extreme care was also taken to maintain the baseline integrity of the single cycle MIPS processor. That is, we extended the capability of the CPU *without breaking anything* in the process.
 
 The video documentation may be accessed through this link:
 
 ### **Requirements**
-- Windows 10 or higher (for running the latest Xilinx Vivado distribution).
-- 
+It is suggested for you to only watch the video documentation or skim through the written documentation due to the tediousness of the subject. However, if you wish to verify this endeavor's results on your end, the following would be needed.
+- Windows 10 or higher (for running the latest Xilinx Vivado distribution or EDA playground).
 - MARS v4.5. A Java program for teaching, compiling, and running MIPS32 Assembly. Download: http://courses.missouristate.edu/kenvollmar/mars/download.htm
 
 Note: There is already a packaged `mars.jar` file in `"For Submission\"`.
