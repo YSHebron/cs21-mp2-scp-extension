@@ -1,5 +1,5 @@
 # **CS 21 Project 2: Extending a 32-bit CPU Instruction Set.**
-For this project, we were tasked to extend the MIPS 32-bit Single Cycle Processor (SCP) (Harris & Harris, 2013) instruction set. The processor was modified to accomodate 5 new instructions:
+For this project, we were tasked to extend the MIPS 32-bit Single Cycle Processor (SCP) (Harris & Harris, 2013) instruction set. A nuanced understanding of **Hardware Definition Language** (HDL) (specifically **SystemVerilog**) is key to succeeding on this project. Towards that,  The processor was modified to accomodate 5 new instructions:
 1. Shift left logical (sll)
 2. Store byte (sb)
 3. Branch on less than or equal (ble)
