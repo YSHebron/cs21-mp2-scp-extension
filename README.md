@@ -1,5 +1,13 @@
-# **CS 21 Project 2: Extending a CPU Instruction Set.**
-Extending the MIPS32 Single Cycle Processor (SCP) (Harris, 2013) instruction set.
+# **CS 21 Project 2: Extending a 32-bit CPU Instruction Set.**
+For this project, we were tasked to extend the MIPS32 Single Cycle Processor (SCP) (Harris, 2013) instruction set. The processor was modified to accomodate 5 new instructions.
+
+Before our modifications, the processor can only execute 
+
+Reference Text: 
+
+MIPS green sheet.
+
+R-type, I-type, and J-type instructions.
 
 ## MIPS32 Assembly 4x4 and 9x9 Sudoku Solver
 First, we noted Sudoku's goal conditions and constraints (see `CS21_Project1_Specs.pdf`).\
@@ -65,3 +73,8 @@ Yenzy Urson S. Hebron
 University of the Philippines Diliman
 
 2nd Semester A.Y. 2021-2022
+
+© Course Materials by Sir Wilson Tan and Sir Ivan Carlo Balingit
+
+Reference:\
+Harris, D. M., & Harris, S. (2013). *Digital Design and Computer Architecture (2nd ed.).* Elsevier Inc. https://doi.org/10.1016/C2011-0-04377-6
