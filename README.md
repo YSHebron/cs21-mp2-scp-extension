@@ -1,7 +1,5 @@
-# CS 21 Project 2: Extending a MIPS32 .
+# **CS 21 Project 2: Extending a CPU Instruction Set.**
 Extending the MIPS32 Single Cycle Processor (SCP) (Harris, 2013) instruction set.
-
-# **CS 21 Project 1: Sudoku**
 
 ## MIPS32 Assembly 4x4 and 9x9 Sudoku Solver
 First, we noted Sudoku's goal conditions and constraints (see `CS21_Project1_Specs.pdf`).\
