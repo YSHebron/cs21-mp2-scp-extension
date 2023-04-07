@@ -25,8 +25,8 @@ The video documentation may be accessed through this link:
 ### **Requirements**
 It is suggested for you to only watch the video documentation or skim through the written documentation due to the tediousness of the subject. However, if you wish to verify this endeavor's results on your end, the following would be needed.
 - Windows 10 or higher
-- 
-- Xilinx Vivado 2021.2 Suite: Download through https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2021-2.html
+- For high-performance systems, one may use Xilinx Vivado 2021.2 Suite: Download through https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2021-2.html (will require account registration).
+- For low-performance systems, one may use EDA Playground. Web app through https://edaplayground.com/ (will require account registration). Please see Project 2 Specs page 25 for full guide. 
 - Minimal space and at least 4 GB memory for EDA playground. At least 70 GB of space and 8 GB of memory for Xilinx Vivado.
 
 ### **Running the Program**
