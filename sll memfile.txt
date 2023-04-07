@@ -1,0 +1,107 @@
+2010000c
+00108200
+00108200
+00108200
+2210000c
+ac100054
+
+aludec sll first version
+////////////
+`timescale 1ns / 1ps
+module aludec(input  logic [5:0] funct,
+              input  logic [1:0] aluop,
+              output logic [2:0] alucontrol,
+              output logic       shift // added
+              );
+    
+    logic [3:0] signals;
+    assign {alucontrol, shift} = signals;
+
+    always_comb begin
+        case(aluop)
+            2'b00: signals <= 3'b010;  // add (for lw/sw/addi/sb)
+            2'b01: signals <= 3'b110;  // sub (for beq)
+            default: begin
+                case(funct)          // R-type instructions
+                    6'b100000: alucontrol <= 3'b010; // add
+                    6'b100010: alucontrol <= 3'b110; // sub
+                    6'b100100: alucontrol <= 3'b000; // and
+                    6'b100101: alucontrol <= 3'b001; // or
+                    6'b101010: alucontrol <= 3'b111; // slt
+                    6'b000000: alucontrol <= 3'b011;  // sll
+                    default:   alucontrol <= 3'bxxx; // ???
+                endcase
+//                if (funct === 6'b000000) shift <= 1;
+//                else shift <= 0;
+            end
+        endcase
+    end
+endmodule
+
+
+datapath for sll first version
+////////////
+`timescale 1ns / 1ps
+module datapath(input  logic        clk, reset,
+                input  logic        memtoreg, pcsrc,
+                input  logic        alusrc, regdst,
+                input  logic        regwrite, jump,
+                input  logic [2:0]  alucontrol,
+                output logic        zero,
+                output logic [31:0] pc,
+                input  logic [31:0] instr,
+                output logic [31:0] aluout, writedata,
+                input  logic [31:0] readdata,
+                input  logic        shift   // added
+                );
+
+  logic [4:0]  writereg;
+  logic [31:0] pcnext, pcnextbr, pcplus4, pcbranch;
+  logic [31:0] signimm, signimmsh;
+  logic [31:0] RD1, RD2;        // added for clarity
+  logic [31:0] srca, srcb;
+  logic [31:0] result;
+  logic [31:0] sllresult, sllout;   // added
+  
+  // debug displayer
+  always_comb begin
+      //$display("%b", shift);
+      //$display("RD2: %b", RD2);
+      //$display("sllresult: %b", sllresult);
+      $display("shift: %b", shift);
+      $display("sllout: %b", sllout);
+  end
+
+  // next PC logic
+  flopr #(32) pcreg(clk, reset, pcnext, pc);
+  adder #(32) pcadd1(pc, 32'b100, 'b0, pcplus4); //So we adjust this to use the more complex adder; wmt-modification
+  sl2         immsh(signimm, signimmsh);
+  adder #(32) pcadd2(pcplus4, signimmsh, 'b0, pcbranch); //See comment above
+  mux2 #(32)  pcbrmux(pcplus4, pcbranch, pcsrc, pcnextbr);
+  mux2 #(32)  pcmux(pcnextbr, {pcplus4[31:28], 
+                    instr[25:0], 2'b00}, jump, pcnext);
+
+  // register file logic
+  assign    srca = RD1;
+  assign    writedata = RD2;    //added
+  regfile     rf(clk, regwrite, instr[25:21], instr[20:16], 
+                 writereg, result, RD1, RD2); // modded srca to RD1, writedata to RD2
+  mux2 #(5)   wrmux(instr[20:16], instr[15:11],
+                    regdst, writereg);
+  mux2 #(32)  sllmux(aluout, sllresult, shift, sllout);     // added
+  mux2 #(32)  resmux(sllout, readdata, memtoreg, result);   // aluout to sllout
+  signext     se(instr[15:0], signimm);
+
+  // ALU logic
+  //mux2 #(32)  srcamux(RD1, {27'b0, instr[10:6]}, shift, srca); // addded
+  mux2 #(32)  srcbmux(RD2, signimm, alusrc, srcb);
+  alu         alu(srca, srcb, alucontrol, aluout, zero); // srca RD1
+  
+  // left shifter logic
+  shiftleft #(32) sll(RD2, instr[10:6], sllresult);
+  
+  // store byte logic
+  
+  
+  
+endmodule

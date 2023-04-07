@@ -1,0 +1,25 @@
+`timescale 1ns / 1ps
+
+module sll_testbench();
+    logic clk;
+    logic [31:0] A;
+    logic [4:0] shamt;
+    logic [31:0] Y;
+    
+    shiftleft #(32) instantiated_shiftleft(A, shamt, Y);
+    
+    initial begin
+        clk = 0;
+        
+        A = 'h0000000C; shamt = 5'b00100; #2;
+        $display("Y = %b", Y);
+        A = 'h0000000C; shamt = 5'b01000; #2;
+        $display("Y = %b", Y);
+        $finish;
+    
+    end
+    
+    always begin
+        #1 clk = ~clk;
+    end 
+endmodule
