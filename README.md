@@ -1,6 +1,6 @@
 # **CS 21 Project 2: Extending a 32-bit CPU Instruction Set.**
 
-### **Description**
+## **Description**
 For this project, we had to extend the MIPS 32-bit Single Cycle Processor (SCP) (Harris & Harris, 2013) instruction set (please see `CS21_Project2_Specs.pdf` for full specifications).
 
 A nuanced understanding of **Hardware Definition Language** (HDL) (specifically **SystemVerilog**) and digital circuits (especially the **datapath** and **control path**) is key to succeeding on this project. We modified the processor to accomodate 5 new instructions:
@@ -12,10 +12,6 @@ A nuanced understanding of **Hardware Definition Language** (HDL) (specifically 
 
 Please see my Documentation Intro (`For Submission\Hebron_Yenzy_202003090_LAB4.pdf`) or the MIPS Green Sheet (`MIPS Green Sheet (Berkeley).pdf`) for the MIPS32 instruction formats. You may also consult Appendix B of Harris & Harris (2013) or the Project 2 Specs for the complete instruction set and their expected effect.
 
-Schematics
-Before the modification, the SCP is only capable of handling R-type, lw, sw, and beq instructions, with the following schematics:
-
-
 Our technical documentation skills were also sharpened by this project, one that required *line-by-line* explanation of code. Discussed in the documentation *per added instruction* are:
 * HDL edits
 * Testbench for simulations. 
@@ -25,6 +21,12 @@ Our technical documentation skills were also sharpened by this project, one that
 Extreme care was also taken to maintain the baseline integrity of the single cycle MIPS processor. That is, we extended the capability of the CPU *without breaking anything* in the process.
 
 The video documentation may be accessed through this link:
+
+## **Schematics**
+Before the modifications, the SCP is only capable of handling R-type, lw, sw, and beq instructions, with the following schematic diagram (Harris & Harris, 2013):
+![MIPS32_SCP_orig.png](MIPS32_SCP_orig.png)
+After the modifications, the SCP is now also capable of sll, sb, ble, li, and zfr, with the following schematic diagram:
+![MIPS32_SCP_final.png](MIPS32_SCP_final.png)
 
 ### **Requirements**
 It is suggested for you to only watch the video documentation or skim through the written documentation due to the project's tediousness. Design, simulation, and testbench files from the workbench (`CS21_Project2_v2\`) were also fetched for your quick reference. You may browse them in the directories `Design Sources\`, `Instruction Tests\` & `Simulation Sources\`, and `Testbenches\` respectively.
