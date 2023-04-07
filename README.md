@@ -27,9 +27,9 @@ Before the modifications, the SCP is only capable of handling R-type, lw, sw, an
 ![MIPS32_SCP_orig.png](MIPS32_SCP_orig.png)
 After the modifications, the SCP is now also capable of sll, sb, ble, li, and zfr, with the following schematic diagram:
 ![MIPS32_SCP_final.png](MIPS32_SCP_final.png)
-Full schematics can be found in `Circuit Diagrams.drawio`.
+Full schematics can be found in `Circuit Diagrams.drawio` (draw.io needed).
 
-### **Requirements**
+## **Requirements**
 It is suggested for you to only watch the video documentation or skim through the written documentation due to the project's tediousness. Design, simulation, and testbench files from the workbench (`CS21_Project2_v2\`) were also fetched for your quick reference. You may browse them in the directories `Design Sources\`, `Instruction Tests\` & `Simulation Sources\`, and `Testbenches\` respectively.
 
 However, if you really wish to verify the results on your end, the following would be needed.
@@ -40,7 +40,7 @@ However, if you really wish to verify the results on your end, the following wou
 
 **Remark:** Please note that this project was accomplished through Vivado.
 
-### **Running Simulations**
+## **Running Simulations**
 This guide will only focus on the Vivado platform. Analogous steps can be expected in EDA Playground.
 1. Start Vivado. Complete the set-up and account registration process.
 2. Once Vivado is started, open an existing workbench through File. Select the following directory in your clone of this repository: `CS21_Project2_v2\`. This step will load all Design and Simulation sources to your Vivado session.
@@ -50,7 +50,7 @@ This guide will only focus on the Vivado platform. Analogous steps can be expect
 6. Copy the contents of the desired instruction test from `Instruction Tests\` to `memfile.mem` (overwrite it).
 7. Finally, hit Simulate from the Menu Bar. This will produce a waveform diagram that you may examine for any errors (as we did in the documentation). You may also watch the TCL Console panel for any issues (the testbench is very verbose).
 
-### **Sample I/O (sll)**
+## **Sample I/O (sll)**
 For the sll instruction, you will open `Instruction Tests\sll memfile.txt` and copy its machine code contents to your `memfile.mem` (also shown below).
 ```
 2010000c
@@ -65,7 +65,7 @@ An assembly translation of that machine code can be found in  `Instruction Tests
 
 As expected, the diagram is clean and error-free. The TLC Console panel would also accompany this with a "Success" message. Video documentation includes a full discussion of the entire waveforms.
 
-**Reference**\
+### **Reference**
 Harris, D. M., & Harris, S. (2013). *Digital Design and Computer Architecture (2nd ed.).* Elsevier Inc. https://doi.org/10.1016/C2011-0-04377-6
 
 ---
