@@ -59,31 +59,6 @@ An assembly translation of that machine code can be found in  `Instruction Tests
 3124
 ```
 
-For the 9x9 solver, an input is formatted as:
-```
-005800009
-210000050
-070900600
-000201035
-000000000
-780405000
-004006020
-030000061
-600003500
-```
-Which outputs:
-```
-465812379
-219367458
-378954612
-946271835
-523698147
-781435296
-154786923
-832549761
-697123584
-```
-
 **Reference**\
 Harris, D. M., & Harris, S. (2013). *Digital Design and Computer Architecture (2nd ed.).* Elsevier Inc. https://doi.org/10.1016/C2011-0-04377-6
 
