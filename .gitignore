@@ -56,4 +56,4 @@ dkms.conf
 *.docx
 *.bkp
 *.mp4
-*.drawio
+# *.drawio
