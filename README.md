@@ -41,7 +41,7 @@ This guide will only focus on the Vivado platform. Analogous steps can be expect
 4. Reorder the hiearchy of files by refreshing the Sources pane.
 5. Open `memfile.mem` in the Vivado Sources pane, and its contents will appear in a tab the Vivado Editor panel.
 6. Copy the contents of the desired instruction test from `Instruction Tests\` to `memfile.mem` (overwrite it).
-7. Finally, hit Simulate from the Menu Bar. This will produce a waveform diagram that you may examine for any errors (as we did in the documentation). You may also watch the Console Log panel for any issues (the testbench is very verbose).
+7. Finally, hit Simulate from the Menu Bar. This will produce a waveform diagram that you may examine for any errors (as we did in the documentation). You may also watch the TCL Console panel for any issues (the testbench is very verbose).
 
 ### **Sample I/O (sll)**
 For the sll instruction, you will open `Instruction Tests\sll memfile.txt` and copy its machine code contents to your `memfile.mem`. 
@@ -58,7 +58,8 @@ An assembly translation of that machine code can be found in  `Instruction Tests
 2413
 3124
 ```
-
+As expected, the diagram is clean and error-free. The TLC Console panel would also accompany this with a "Success" message.
+ 
 **Reference**\
 Harris, D. M., & Harris, S. (2013). *Digital Design and Computer Architecture (2nd ed.).* Elsevier Inc. https://doi.org/10.1016/C2011-0-04377-6
 
