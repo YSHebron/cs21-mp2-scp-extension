@@ -50,8 +50,8 @@ This guide will only focus on the Vivado platform. Analogous steps can be expect
 6. Copy the contents of the desired instruction test from `Instruction Tests\` to `memfile.mem` (overwrite it).
 7. Finally, hit Simulate from the Menu Bar. This will produce a waveform diagram that you may examine for any errors (as we did in the documentation). You may also watch the TCL Console panel for any issues (the testbench is very verbose).
 
-## **Sample I/O (sll)**
-For the sll instruction, you will open `Instruction Tests\sll memfile.txt` and copy its machine code contents to your `memfile.mem` (also shown below).
+## **Sample I/O**
+For testing, say, the sll instruction, you will open `Instruction Tests\sll memfile.txt` and copy its machine code contents to your `memfile.mem` (also shown below).
 ```
 2010000c
 00108200
