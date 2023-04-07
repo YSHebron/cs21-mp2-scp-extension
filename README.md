@@ -1,5 +1,7 @@
 # **CS 21 Project 2: Extending a 32-bit CPU Instruction Set.**
-For this project, we were tasked to extend the MIPS 32-bit Single Cycle Processor (SCP) (Harris & Harris, 2013) instruction set. A nuanced understanding of **Hardware Definition Language** (HDL) (specifically **SystemVerilog**) is key to succeeding on this project. Towards that,  The processor was modified to accomodate 5 new instructions:
+For this project, we were tasked to extend the MIPS 32-bit Single Cycle Processor (SCP) (Harris & Harris, 2013) instruction set (please see `CS21_Project2_Specs.pdf` for full specifications).
+
+A nuanced understanding of **Hardware Definition Language** (HDL) (specifically **SystemVerilog**) is key to succeeding on this project. We modified the processor to accomodate 5 new instructions:
 1. Shift left logical (sll)
 2. Store byte (sb)
 3. Branch on less than or equal (ble)
@@ -8,13 +10,8 @@ For this project, we were tasked to extend the MIPS 32-bit Single Cycle Processo
 
 Please see my Documentation Intro (`For Submission\Hebron_Yenzy_202003090_LAB4.pdf`) or the MIPS Green Sheet (`MIPS Green Sheet (Berkeley).pdf`) for the MIPS32 instruction formats. You may also consult Appendix B of Harris & Harris (2013) or the Project 2 Specs for the complete instruction set and their expected effect.
 
-Note that before 
+Our technical documentation skills were also sharpened by this project, one that require line-by-line explanation of code. Included in the documentation, per instruction, are:
 
-## MIPS32 Assembly 4x4 and 9x9 Sudoku Solver
-First, we noted Sudoku's goal conditions and constraints (see `CS21_Project1_Specs.pdf`).\
-Next, We wrote C programs as basis (see `"C Files\"`), which we then converted to Assembly.\
-Key to our approach is **backtracking** and **search space optimization**.\
-Full documentation and Assembly files for the `4x4solver.asm` and `9x9solver.asm` sudoku solvers can be found in `"For Submission\"`.
 ### **Requirements**
 - Windows XP or higher.
 - Java Runtime Environment (JRE), Java 9 or higher. Latest Java SE recommended. Download: https://www.oracle.com/java/technologies/javase-downloads.html
