@@ -1,7 +1,7 @@
 # **CS 21 Project 2: Extending a 32-bit CPU Instruction Set.**
 
 ## **Description**
-For this project, we had to extend the MIPS 32-bit Single Cycle Processor (SCP) (Harris & Harris, 2013) instruction set (please see `CS21_Project2_Specs.pdf` for full specifications).
+For this project, we had to extend the MIPS 32-bit Single Cycle Processor (SCP) (Harris & Harris, 2013) instruction set (please see `CS21_Project2_Specs.pdf` for full specifications, email me for access).
 
 A nuanced understanding of **Hardware Definition Language** (HDL) (specifically **SystemVerilog**) and digital circuits (especially the **datapath** and **control path**) is key to succeeding on this project. We modified the processor to accomodate 5 new instructions:
 1. Shift left logical (sll)
@@ -10,7 +10,7 @@ A nuanced understanding of **Hardware Definition Language** (HDL) (specifically 
 4. Load immediate (li)
 5. Zero-from-right (zfr)
 
-Please see my **Documentation** intro (`For Submission\Hebron_Yenzy_202003090_LAB4.pdf`) or the MIPS Green Sheet (`MIPS Green Sheet (Berkeley).pdf`) for the MIPS32 instruction formats. You may also consult Appendix B of Harris & Harris (2013) or the Project 2 Specs (email me for access) for the complete instruction set and their expected effect.
+Please see my **Documentation** intro (`For Submission\Documentation.pdf`) or the MIPS Green Sheet (`MIPS Green Sheet (Berkeley).pdf`) for the MIPS32 instruction formats. You may also consult Appendix B of Harris & Harris (2013) or the Project 2 Specs (email me for access) for the complete instruction set and their expected effect.
 
 Our technical documentation skills were also sharpened by this project, one that required *line-by-line* explanation of code. Discussed in the documentation *per added instruction* are:
 * HDL edits
