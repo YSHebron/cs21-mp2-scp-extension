@@ -12,7 +12,9 @@ Please see my Documentation Intro (`For Submission\Hebron_Yenzy_202003090_LAB4.p
 
 Our technical documentation skills were also sharpened by this project, one that require line-by-line explanation of code. Discussed in the documentation are the following (per added instruction):
 * HDL edits
-* Testbenches for verifying if the extended instruction set is working.
+* Testbench for simulations. 
+* Test code (in assembly and in machine code) for verifying if the extended instruction set is working.
+* Demonstration that the processor can now successfully execute the instruction required.
 
 
 The video documentation may be accessed through this link:
