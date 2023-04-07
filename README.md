@@ -59,7 +59,7 @@ For the sll instruction, you will open `Instruction Tests\sll memfile.txt` and c
 2210000c
 ac100054
 ```
-An assembly translation of that machine code can be found in  `Instruction Tests\sll tester.asm`. Simulating this will then output the following waveform diagram (truncated to only show the last few cycles):
+An assembly translation of that machine code can be found in  `Instruction Tests\sll tester.asm`. Simulating the workbench with the appropriate testbench on top (`sll_testbench.sv`) will then produce the following waveform diagram (truncated to only show the last few cycles):
 ![sll_waveform.png](sll_waveform.png)
 
 As expected, the diagram is clean and error-free. The TLC Console panel would also accompany this with a "Success" message. Video documentation includes a full discussion of the entire waveforms.
