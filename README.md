@@ -27,6 +27,7 @@ Before the modifications, the SCP is only capable of handling R-type, lw, sw, an
 ![MIPS32_SCP_orig.png](MIPS32_SCP_orig.png)
 After the modifications, the SCP is now also capable of sll, sb, ble, li, and zfr, with the following schematic diagram:
 ![MIPS32_SCP_final.png](MIPS32_SCP_final.png)
+Full schematics can be found in `Circuit Diagrams.drawio`.
 
 ### **Requirements**
 It is suggested for you to only watch the video documentation or skim through the written documentation due to the project's tediousness. Design, simulation, and testbench files from the workbench (`CS21_Project2_v2\`) were also fetched for your quick reference. You may browse them in the directories `Design Sources\`, `Instruction Tests\` & `Simulation Sources\`, and `Testbenches\` respectively.
