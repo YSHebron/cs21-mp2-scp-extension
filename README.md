@@ -32,7 +32,9 @@ It is suggested for you to only watch the video documentation or skim through th
 **Remark:** Please note that this project was accomplished through Vivado.
 
 ### **Running Simulations**
-This guide will only. Analogous steps can be expected in EDA Playground.
+This guide will only focus on the Vivado platform. Analogous steps can be expected in EDA Playground.
+1. Start Vivado. Complete the registration processes.
+2. Open 
 
 ### **Sample I/O**
 For the 4x4 solver, an input is formatted as:
