@@ -12,9 +12,11 @@ Please see my Documentation Intro (`For Submission\Hebron_Yenzy_202003090_LAB4.p
 
 Our technical documentation skills were also sharpened by this project, one that require line-by-line explanation of code. Included in the documentation, per instruction, are:
 
+The video documentation may be accessed through this link:
+
 ### **Requirements**
-- Windows XP or higher.
-- Java Runtime Environment (JRE), Java 9 or higher. Latest Java SE recommended. Download: https://www.oracle.com/java/technologies/javase-downloads.html
+- Windows 10 or higher (for running the latest Xilinx Vivado distribution).
+- 
 - MARS v4.5. A Java program for teaching, compiling, and running MIPS32 Assembly. Download: http://courses.missouristate.edu/kenvollmar/mars/download.htm
 
 Note: There is already a packaged `mars.jar` file in `"For Submission\"`.
@@ -65,6 +67,10 @@ Which outputs:
 832549761
 697123584
 ```
+
+**Reference**\
+Harris, D. M., & Harris, S. (2013). *Digital Design and Computer Architecture (2nd ed.).* Elsevier Inc. https://doi.org/10.1016/C2011-0-04377-6
+
 ---
 Yenzy Urson S. Hebron
 
@@ -73,6 +79,3 @@ University of the Philippines Diliman
 2nd Semester A.Y. 2021-2022
 
 © Course Materials by Sir Wilson Tan and Sir Ivan Carlo Balingit
-
-Reference:\
-Harris, D. M., & Harris, S. (2013). *Digital Design and Computer Architecture (2nd ed.).* Elsevier Inc. https://doi.org/10.1016/C2011-0-04377-6
