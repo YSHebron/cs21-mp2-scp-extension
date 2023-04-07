@@ -18,7 +18,7 @@ Our technical documentation skills were also sharpened by this project, one that
 * Test code (in assembly and in machine code) for verifying if the extended instruction set is working.
 * Demonstration that the processor can now successfully execute the instruction required.
 
-Extreme care was also taken to maintain the baseline integrity of the single cycle MIPS processor. That is, we extended the capability of the CPU *without breaking anything* in the process. The integrity checks are the testbenches `Simulation Sources\testbench.sv` with machine code `Simulation Sources\testbench.txt` and `Simulation Sources\testbench_2.sv` with machine code `Simulation Sources\testbench_2.txt`
+Extreme care was also taken to maintain the baseline integrity of the single cycle MIPS processor. That is, we extended the capability of the CPU *without breaking anything* in the process. The integrity checks are the testbenches `Simulation Sources\testbench.sv` with machine code `Simulation Sources\testbench.txt` and `Simulation Sources\testbench_2.sv` with machine code `Simulation Sources\testbench_2.txt`. The instruction memory component were also tested using the `imem_testbench`.
 
 The video documentation may be accessed through this link:
 
