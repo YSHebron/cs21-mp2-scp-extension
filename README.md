@@ -25,7 +25,7 @@ The video documentation may be accessed through this link:
 ### **Requirements**
 It is suggested for you to only watch the video documentation or skim through the written documentation due to the tediousness of the subject. However, if you wish to verify this endeavor's results on your end, the following would be needed.
 - Windows 10 or higher (for running the latest Xilinx Vivado distribution or EDA playground).
-- MARS v4.5. A Java program for teaching, compiling, and running MIPS32 Assembly. Download: http://courses.missouristate.edu/kenvollmar/mars/download.htm
+- 
 
 Note: There is already a packaged `mars.jar` file in `"For Submission\"`.
 
