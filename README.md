@@ -12,6 +12,10 @@ A nuanced understanding of **Hardware Definition Language** (HDL) (specifically 
 
 Please see my Documentation Intro (`For Submission\Hebron_Yenzy_202003090_LAB4.pdf`) or the MIPS Green Sheet (`MIPS Green Sheet (Berkeley).pdf`) for the MIPS32 instruction formats. You may also consult Appendix B of Harris & Harris (2013) or the Project 2 Specs for the complete instruction set and their expected effect.
 
+Schematics
+Before the modification, the SCP is only capable of handling R-type, lw, sw, and beq instructions, with the following schematics:
+
+
 Our technical documentation skills were also sharpened by this project, one that required *line-by-line* explanation of code. Discussed in the documentation *per added instruction* are:
 * HDL edits
 * Testbench for simulations. 
@@ -59,7 +63,7 @@ An assembly translation of that machine code can be found in  `Instruction Tests
 3124
 ```
 As expected, the diagram is clean and error-free. The TLC Console panel would also accompany this with a "Success" message.
- 
+
 **Reference**\
 Harris, D. M., & Harris, S. (2013). *Digital Design and Computer Architecture (2nd ed.).* Elsevier Inc. https://doi.org/10.1016/C2011-0-04377-6
 
