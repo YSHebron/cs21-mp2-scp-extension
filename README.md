@@ -52,10 +52,12 @@ This guide will only focus on the Vivado platform. Analogous steps can be expect
 ### **Sample I/O (sll)**
 For the sll instruction, you will open `Instruction Tests\sll memfile.txt` and copy its machine code contents to your `memfile.mem` (also shown below).
 ```
-1000
-0001
-0400
-0020
+2010000c
+00108200
+00108200
+00108200
+2210000c
+ac100054
 ```
 An assembly translation of that machine code can be found in  `Instruction Tests\sll tester.asm`. Simulating this will then output the following waveform diagram:
 ```
