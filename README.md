@@ -33,8 +33,9 @@ It is suggested for you to only watch the video documentation or skim through th
 
 ### **Running Simulations**
 This guide will only focus on the Vivado platform. Analogous steps can be expected in EDA Playground.
-1. Start Vivado. Complete the registration processes.
-2. Open 
+1. Start Vivado. Complete the set-up and account registration process.
+2. Once Vivado is started, open an existing workbench through File. Select the following directory in your clone of this repository: `CS21_Project2_v2\`. This step will load all Design and Simulation sources to your Vivado session.
+3. Once the workbench has loaded, you may begin testing the added instructions. Select the appropriate testbench for the desired instruction that you will test in the Simulation Sources pane. 
 
 ### **Sample I/O**
 For the 4x4 solver, an input is formatted as:
