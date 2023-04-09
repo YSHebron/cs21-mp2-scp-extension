@@ -1,7 +1,7 @@
 # **CS 21 Project 2: Extending a 32-bit CPU Instruction Set.**
 
 ## **Description**
-For this project, we had to extend the MIPS 32-bit Single Cycle Processor (SCP) (Harris & Harris, 2013) instruction set (please see `CS21_Project2_Specs.pdf` for full specifications, email me for access). Main languages used are Verilog and SystemVerilog. Main IDE used is Xilinx Vivado.
+For this project, we had to extend the MIPS 32-bit Single Cycle Processor (SCP) (Harris & Harris, 2013) instruction set (please see `CS21_Project2_Specs.pdf` for full specifications, email me for access). Main languages used were Verilog and SystemVerilog. Main IDE used was Xilinx Vivado.
 
 A nuanced understanding of **Hardware Definition Language** (HDL) (specifically **SystemVerilog**) and digital circuits (especially the **datapath** and **control path**) is key to succeeding on this project. We modified the processor to accomodate 5 new instructions:
 1. Shift left logical (sll)
