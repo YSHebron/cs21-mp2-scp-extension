@@ -72,8 +72,7 @@ As expected, the diagram is clean and error-free. The TLC Console panel would al
 Harris, D. M., & Harris, S. (2013). *Digital Design and Computer Architecture (2nd ed.).* Elsevier Inc. https://doi.org/10.1016/C2011-0-04377-6
 
 ---
-Yenzy Urson S. Hebron \
-yshebron@up.edu.ph
+Yenzy Urson S. Hebron \<yshebron@up.edu.ph\>
 
 University of the Philippines Diliman
 
