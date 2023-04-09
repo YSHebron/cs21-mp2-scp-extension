@@ -20,7 +20,10 @@ Our technical documentation skills were also sharpened by this project, one that
 
 Extreme care was also taken to maintain the baseline integrity of the single cycle MIPS processor. That is, we extended the capability of the CPU *without breaking anything* in the process. The integrity checks are the testbenches `Simulation Sources\testbench.sv` with machine code `Simulation Sources\testbench.txt` and `Simulation Sources\testbench_2.sv` with machine code `Simulation Sources\testbench_2.txt`. The instruction memory component were also tested using the `imem_testbench`.
 
-Link to Video Documentation: https://drive.google.com/file/d/1N0l3GV2r9BShghN13NfjL3-9g5s0T68J/view?usp=sharing
+### **Quick Links**
+- See `CS21_Project2_Specs.pdf` for full specifications. Email me for access.
+- Project Documentation in `For Submission\Documentation.pdf`.
+- Link to Video Documentation [here](https://drive.google.com/file/d/1N0l3GV2r9BShghN13NfjL3-9g5s0T68J/view?usp=sharing).
 
 ## **Schematics**
 Before the modifications, the SCP is only capable of handling R-type, lw, sw, and beq instructions, with the following schematic diagram (Harris & Harris, 2013):
@@ -34,7 +37,7 @@ It is suggested for you to only watch the video documentation or skim through th
 
 However, if you really wish to verify the results on your end, the following would be needed.
 - Windows 10 or higher
-- For high-performance systems, one may use Xilinx Vivado 2021.2 Suite: Download through https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2021-2.html (will require account registration).
+- For high-performance systems, one may use Xilinx Vivado 2021.2 Suite: Download through this [link](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2021-2.html) (will require account registration).
 - For low-performance systems, one may use EDA Playground. Web app through https://edaplayground.com/ (will require account registration). Please see Project 2 Specs page 25 for full guide. 
 - Minimal space and at least 4 GB memory for EDA playground. At least 70 GB of space and 8 GB of memory for Xilinx Vivado.
 
