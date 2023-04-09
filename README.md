@@ -1,7 +1,7 @@
 # **CS 21 Project 2: Extending a 32-bit CPU Instruction Set.**
 
 ## **Description**
-For this project, our goal was to extend the MIPS 32-bit Single Cycle Processor (SCP) (Harris & Harris, 2013) instruction set (please see `CS21_Project2_Specs.pdf` for full specifications, email me for access). Main languages used were Verilog and SystemVerilog. Main IDE used was Xilinx Vivado.
+For this project, our goal was to extend the MIPS 32-bit Single Cycle Processor (SCP) (Harris & Harris, 2013) instruction set. Main languages used were Verilog and SystemVerilog. Main IDE used was Xilinx Vivado.
 
 A nuanced understanding of **Hardware Definition Language** (HDL) (specifically **SystemVerilog**) and digital circuits (especially the **datapath** and **control path**) is key to succeeding on this project. We modified the processor to accomodate 5 new instructions:
 1. Shift left logical (sll)
@@ -10,7 +10,7 @@ A nuanced understanding of **Hardware Definition Language** (HDL) (specifically 
 4. Load immediate (li)
 5. Zero-from-right (zfr)
 
-Please see my **Documentation** intro (`For Submission\Documentation.pdf`) or the MIPS Green Sheet (`MIPS Green Sheet (Berkeley).pdf`) for the MIPS32 instruction formats. You may also consult Appendix B of Harris & Harris (2013) or the Project 2 Specs (email me for access) for the complete instruction set and their expected effect.
+Please see my **Documentation** intro (`For Submission\Documentation.pdf`) or the MIPS Green Sheet (`MIPS Green Sheet (Berkeley).pdf`) for the MIPS32 instruction formats. You may also consult Appendix B of Harris & Harris (2013) or the Project 2 Specs (please [email](yshebron@up.edu.ph) me for access) for the complete instruction set and their expected effect.
 
 Our technical documentation skills were also sharpened by this project, one that required *line-by-line* explanation of code. Discussed in the documentation *per added instruction* are:
 * HDL edits
@@ -72,7 +72,8 @@ As expected, the diagram is clean and error-free. The TLC Console panel would al
 Harris, D. M., & Harris, S. (2013). *Digital Design and Computer Architecture (2nd ed.).* Elsevier Inc. https://doi.org/10.1016/C2011-0-04377-6
 
 ---
-Yenzy Urson S. Hebron
+Yenzy Urson S. Hebron \
+yshebron@up.edu.ph
 
 University of the Philippines Diliman
 
