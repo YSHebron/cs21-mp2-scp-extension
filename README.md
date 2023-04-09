@@ -21,7 +21,7 @@ Our technical documentation skills were also sharpened by this project, one that
 Extreme care was also taken to maintain the baseline integrity of the single cycle MIPS processor. That is, we extended the capability of the CPU *without breaking anything* in the process. The integrity checks are the testbenches `Simulation Sources\testbench.sv` with machine code `Simulation Sources\testbench.txt` and `Simulation Sources\testbench_2.sv` with machine code `Simulation Sources\testbench_2.txt`. The instruction memory component were also tested using the `imem_testbench`.
 
 ### **Quick Links**
-- See `CS21_Project2_Specs.pdf` for full specifications. Please email me for access.
+- See `CS21_Project2_Specs.pdf` for full specifications. Please [email](yshebron@up.edu.ph) me for access. Promising quick response.
 - Project Documentation in `For Submission\Documentation.pdf`.
 - Link to Video Documentation [here](https://drive.google.com/file/d/1N0l3GV2r9BShghN13NfjL3-9g5s0T68J/view?usp=sharing).
 
