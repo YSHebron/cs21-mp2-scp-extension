@@ -3,7 +3,7 @@
 ## **Description**
 For this project, our goal was to extend the MIPS 32-bit Single Cycle Processor (SCP) (Harris & Harris, 2013) instruction set. Main languages used were Verilog and SystemVerilog. Main IDE used was Xilinx Vivado.
 
-A nuanced understanding of **Hardware Definition Language** (HDL) (specifically **SystemVerilog**) and digital circuits (especially the **datapath** and **control path**) is key to succeeding on this project. We modified the processor to accomodate 5 new instructions:
+A nuanced understanding of **Hardware Definition Language** (HDL) (specifically **SystemVerilog**) and digital circuits (especially the **controller**, **data path** and **arithmetic logic unit** components of a CPU) is key to succeeding on this project. We modified the processor to accomodate 5 new instructions:
 1. Shift left logical (sll)
 2. Store byte (sb)
 3. Branch on less than or equal (ble)
