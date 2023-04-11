@@ -1,4 +1,4 @@
-# **CS 21 Project 2: Extending a 32-bit CPU Instruction Set.**
+# **CS 21 Project 2: Extending a 32-bit CPU Instruction Set**
 
 ## **Description**
 For this project, our goal was to extend the MIPS 32-bit Single Cycle Processor (SCP) (Harris & Harris, 2013) instruction set. Main languages used were Verilog and SystemVerilog. Main IDE used was Xilinx Vivado.
